@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_img_height"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img"/>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="@style/mProgress_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"/>
+</RelativeLayout>
