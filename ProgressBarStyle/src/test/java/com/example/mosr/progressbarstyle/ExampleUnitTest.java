@@ -1,4 +1,4 @@
-package com.example.mosr.qzonepicanimation;
+package com.example.mosr.progressbarstyle;
 
 import org.junit.Test;
 
