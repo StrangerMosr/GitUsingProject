@@ -78,13 +78,19 @@ public class MainActivity extends AppCompatActivity {
 
         /*代码编写样式*/
         /*自定义*/
-        mCodeCustomProgressBar.setProgressDrawable(new ClipDrawable(customStyle("#DABDFF", "#6F00FF", "#DABDFF"), ClipDrawable.VERTICAL, ClipDrawable.HORIZONTAL));
-        mCodeCustomProgressBar2.setProgressDrawable(new ClipDrawable(customStyle("#DABDFF", "#6F00FF", "#DABDFF"), ClipDrawable.HORIZONTAL, ClipDrawable.HORIZONTAL));
-        //QQ
+        mCodeCustomProgressBar.setProgressDrawable(
+                new ClipDrawable(customStyle("#DABDFF", "#6F00FF", "#DABDFF"), ClipDrawable.VERTICAL, ClipDrawable.HORIZONTAL));
+
+        mCodeCustomProgressBar2.setProgressDrawable(
+                new ClipDrawable(customStyle("#DABDFF", "#6F00FF", "#DABDFF"), ClipDrawable.HORIZONTAL, ClipDrawable.HORIZONTAL));
+        /*QQ*/
         mCodeQQProgressBar.setBackgroundColor(Color.parseColor("#12B7F5"));
-        mCodeQQProgressBar.setProgressDrawable(new ClipDrawable(mQQStyle(this, "#A5FFFFFF", "#FFFFFF"), ClipDrawable.VERTICAL, ClipDrawable.HORIZONTAL));
-        //WetChat
-        mCodeWeChatProgressBar.setProgressDrawable(new ClipDrawable(new ColorDrawable(Color.parseColor("#46C01B")), ClipDrawable.VERTICAL, ClipDrawable.HORIZONTAL));
+
+        mCodeQQProgressBar.setProgressDrawable(
+                new ClipDrawable(mQQStyle(this, "#A5FFFFFF", "#FFFFFF"), ClipDrawable.VERTICAL, ClipDrawable.HORIZONTAL));
+        /*WetChat*/
+        mCodeWeChatProgressBar.setProgressDrawable(
+                new ClipDrawable(new ColorDrawable(Color.parseColor("#46C01B")), ClipDrawable.VERTICAL, ClipDrawable.HORIZONTAL));
     }
 
     public void onClickStart(View v) {
