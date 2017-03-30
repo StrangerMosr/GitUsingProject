@@ -15,7 +15,6 @@
 就是有这么一个小需求，所以写了。写过几种简单样式的，没有深度。所以这次装X写个好看点的。在娘娘身上搜了半天出来的都是写自定义控件啥的，至于嘛？就一个进度条，还自定义...装X了吧。我这个能用源码的决不自定义的人 就不想看，所以调研了一番，结合以前知识写了本文。
 
 <--废话结束-->
-
 XML 写法（与效果图一一对应）：
 ---
 
@@ -90,7 +89,7 @@ QQ样式、
     </item>
 </layer-list>
 ```
-微信样式、
+微信样式
 
 ```
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
@@ -230,4 +229,4 @@ public Drawable mQQStyle(@NonNull Activity mActivity, @NonNull String mStartColo
 
 [Csdn地址](http://blog.csdn.net/qq569699973/article/details/68483855)
 
-[Csdn下载]()
+[Csdn下载](http://dl.download.csdn.net/down11/20170330/3bae3aeb4ed0c61f52f643eacce24609.rar?response-content-disposition=attachment%3Bfilename%3D%22ProgressBarStyle.rar%22&OSSAccessKeyId=9q6nvzoJGowBj4q1&Expires=1490857612&Signature=GW4gvweHZnLKl%2B3VTY3Lh3v0gUU%3D)
