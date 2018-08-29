@@ -1,6 +1,3 @@
-
-# 惯性滑动切换（Fling操作）
-
 ![效果图](https://img-blog.csdn.net/20180829104651239?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxNTY5Njk5OTcz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 重写LinearLayoutManager类，配合v7包中的PagerSnapHelper 达成效果
 
@@ -91,5 +88,6 @@ public class FlingLayoutManager extends LinearLayoutManager implements RecyclerV
     }
 }
 ```
+[帖子地址](https://blog.csdn.net/qq569699973/article/details/82180045)
 [CSDN下载](https://download.csdn.net/download/qq569699973/10633151)
 [Git托管地址](https://github.com/StrangerMosr/GitUsingProject/tree/master/Flingdemo)
