@@ -14,6 +14,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnViewPagerListener {
     private RecyclerView mRecyclerView;
+    private ImageView img_small;
     List<Integer> mData = new ArrayList<>();
 
     @Override
@@ -56,11 +57,13 @@ public class MainActivity extends AppCompatActivity implements OnViewPagerListen
                 return mData.size();
             }
         });
+        img_small = (ImageView) findViewById(R.id.img_small);
     }
 
     @Override
     public void onPageSelected(int postion, boolean isNext) {
         int index = isNext ? 0 : 1;
+        img_small.setImageResource(mData.get(postion));
     }
 
     @Override
