@@ -9,13 +9,18 @@ import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
+    private LinearLayout activity_main;
 
     private ProgressBar mCustomProgressBar;
     private ProgressBar mCustomProgressBar2;
@@ -33,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final ProgressBar loading = new ProgressBar(this);
+        loading.setIndeterminateDrawable(getResources().getDrawable(R.drawable.progressbar));
+        FrameLayout.LayoutParams loadingLayoutParams = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        loadingLayoutParams.gravity = Gravity.CENTER;
+        loading.setLayoutParams(loadingLayoutParams);
+        activity_main = (LinearLayout) findViewById(R.id.activity_main);
         mCustomProgressBar = (ProgressBar) findViewById(R.id.mCustomProgressBar);
         mCustomProgressBar2 = (ProgressBar) findViewById(R.id.mCustomProgressBar2);
         mQQProgressBar = (ProgressBar) findViewById(R.id.mQQProgressBar);
@@ -41,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mCodeCustomProgressBar2 = (ProgressBar) findViewById(R.id.mCodeCustomProgressBar2);
         mCodeQQProgressBar = (ProgressBar) findViewById(R.id.mCodeQQProgressBar);
         mCodeWeChatProgressBar = (ProgressBar) findViewById(R.id.mCodeWeChatProgressBar);
-
+        activity_main.addView(loading);
         mResetAnimation = new ResetAnimation();
         mResetAnimation.setDuration(3000);
         mResetAnimation.setAnimationListener(new Animation.AnimationListener() {

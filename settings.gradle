@@ -1,1 +1,1 @@
-include ':QzoneView', ':gradientview', ':ProgressBarStyle'
+include ':QzoneView', ':gradientview', ':ProgressBarStyle', ':clipdrawable', ':dragpostusing', ':SwipeViewUsing', ':Flingdemo'

@@ -6,6 +6,8 @@ import android.view.KeyEvent;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.example.mosr.progressbarstyle.R;
+
 public class MainActivity extends AppCompatActivity {
     private QzoneListView mQzoneListView;
 

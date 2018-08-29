@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
+import com.example.mosr.progressbarstyle.R;
+
 /**
  * Synopsis     ${SYNOPSIS}
  * Author		Mosr
